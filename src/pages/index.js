@@ -1,13 +1,9 @@
-import { Button } from "semantic-ui-react";
+import React from 'react'
 
 export default function Index() {
   return (
     <div>
-      <h2>DML Store</h2>
-      <div>
-        <Button primary>Primary</Button>
-        <Button secondary>Secondary</Button>
-      </div>
+      <h2>DML Store</h2>      
     </div>
   );
 }
