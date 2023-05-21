@@ -6,9 +6,7 @@ export const ENV = {
             REGISTER: "auth/local/register",
             LOGIN: "auth/local"
         },
-        USER: {
-            GET: "users/me"
-        }
+        USER: "users/me"
     },
     TOKEN: "token"
 }

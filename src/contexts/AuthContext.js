@@ -13,7 +13,21 @@ export function AuthProvider(props) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(false);
+    (async () => {
+      const token = tokenControl.getToken();
+
+      if (!token) {
+        logout();
+        setLoading(false);
+        return;
+      }
+
+      if (tokenControl.hasExpired(token)) {
+        logout();
+      } else {
+        await login(token);
+      }
+    })();
   }, []);
 
   const login = async (token) => {
@@ -34,11 +48,17 @@ export function AuthProvider(props) {
     }
   };
 
+  const logout = () => {
+    tokenControl.removeToken();
+    setToken(null);
+    setUser(null);
+  };
+
   const data = {
     accessToken: null,
     user,
     login,
-    logout: null,
+    logout,
     updateUser: null,
   };
 

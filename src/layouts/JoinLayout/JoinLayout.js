@@ -6,19 +6,22 @@ import styles from "./JoinLayout.module.scss";
 
 export function JoinLayout(props) {
   const { children } = props;
-  const {user} = useAuth();
+  const { user } = useAuth();
   const router = useRouter();
 
-  if(user) router.push("/")
+  if (user) {
+    router.push("/");
+    return null;
+  }
 
   return (
     <div className={styles.container}>
       <div className={styles.topBar}>
         <Link href="/">
-            <Image src="/images/logo.jpeg" alt="DML Store" />
+          <Image src="/images/logo1.jpeg" alt="DML Store" />
         </Link>
         <Link href="/">
-            <Icon name="close" />
+          <Icon name="close" />
         </Link>
       </div>
       <div className={styles.blockLeft}>{children}</div>

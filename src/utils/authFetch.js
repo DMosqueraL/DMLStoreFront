@@ -1,5 +1,4 @@
 import { Token } from "@/api";
-import { ENV } from "./constants";
 
 export async function authFetch(url, params) {
   const tokenControl = new Token();
