@@ -1,6 +1,6 @@
 import * as Yup from "yup";
 
-export function InicialValues() {
+export function initialValues() {
     return {
         identifier: "",
         password: ""
