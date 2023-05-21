@@ -1,1 +1,1 @@
-export * from "./ResgisterFeorm";
+export * from "./ResgisterForm";
