@@ -27,7 +27,7 @@ export function Footer() {
             <Button as="a" href="#" circular color="facebook" icon="facebook" />
             <Button as="a" href="#" circular color="twitter" icon="twitter" />
             <Button as="a" href="#" circular color="instagram" icon="instagram" />
-            <Button as="a" href="#" circular color="github" icon="github" />
+            <Button as="a" href="#" circular icon="github" />
           </div>
         </div>
 
