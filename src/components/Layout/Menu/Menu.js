@@ -1,18 +1,25 @@
 import { useEffect, useState } from "react";
 import { Image, Icon, Input } from "semantic-ui-react";
+import Link from "next/link";
+import { map } from "lodash";
 import { Platform } from "@/api";
 import styles from "./Menu.module.scss";
+import classNames from "classnames";
 
 const platformControl = new Platform();
+
 export function Menu(props) {
   const { isOpenSearch } = props;
   const [platforms, setPlatforms] = useState(null);
+  const [showSearch, setShowSearch] = useState(false);
 
+  const openCloseSearch = () => setShowSearch((prevState) => !prevState);
 
   useEffect(() => {
     (async () => {
       try {
         const response = await platformControl.getAll();
+        //console.log(response)
         setPlatforms(response.data);
       } catch (error) {
         console.error(error);
@@ -21,8 +28,32 @@ export function Menu(props) {
   }, []);
 
   return (
-    <div>
-      <h2>MENÚ...</h2>
+    <div className={styles.platforms}>
+      {map(platforms, (platform) => (
+        <Link key={platform.id} href={`/games/${platform.attributes.slug}`}>
+          <Image src={platform.attributes.icon.data.attributes.url} />
+          {platform.attributes.title}
+        </Link>
+      ))}
+
+      <button className={styles.search} onClick={openCloseSearch}>
+        <Icon name="search" />
+      </button>
+      <div className={classNames(styles.inputContainer, {
+        [styles.active]:showSearch,
+      })}>
+        <Input
+          id="search-games"
+          placeholder="Buscador"
+          className={styles.input}
+          focus={true}
+        />
+        <Icon
+          name="close"
+          className={styles.closeInput}
+          onClick={openCloseSearch}
+        />
+      </div>
     </div>
   );
 }
