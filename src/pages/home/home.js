@@ -1,9 +1,11 @@
-import { BasicLayout } from "@/layouts"
+import { BasicLayout } from "@/layouts";
 
 export default function HomePage() {
   return (
-    <BasicLayout>
-      <h1>---</h1>
-    </BasicLayout>
-  )
+    <>
+      <BasicLayout>
+        
+      </BasicLayout>
+    </>
+  );
 }
