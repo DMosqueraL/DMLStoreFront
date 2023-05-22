@@ -16,16 +16,17 @@ export class User {
     }
   }
 
-  async updateMe() {
+  async updateMe(userId, data) {
     try {
-      const url = `${ENV.API_URL}/${ENV.ENDPOINTS.USERS}/${user.id}`;
+      const url = `${ENV.API_URL}/${ENV.ENDPOINTS.USERS}/${userId}`;
+
       const params = {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data)      
-      }
+        body: JSON.stringify(data),
+      };
 
       const response = await authFetch(url, params);
       const result = await response.json();
