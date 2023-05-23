@@ -39,12 +39,14 @@
   h2 {
     margin: 5px 0 20px 0 !important;
     color: $text-tertiary ;
+    text-shadow: 1px 0px 3px rgb(247, 245, 245);
   }
 
   .price {
     color: $text-tertiary;
     display: flex;
     align-items: center;
+    text-shadow: 1px 0px 3px rgb(247, 245, 245);
   }
 
   .finalPrice {
