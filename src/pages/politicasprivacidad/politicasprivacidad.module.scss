@@ -1,15 +1,16 @@
 @import "~src/scss/index.scss";
-
 .container {
   align-items: center;
   justify-content: center;
-  
-  .titulo {
-    text-align: center;
-  }
 
   strong {
+    padding-left: 100px;
+    font-size: larger;
     color: $primary;
+  }  
+  
+  span {
+    padding-left: 550px;
   }
 }
 
@@ -17,7 +18,5 @@
   justify-content: center;
   text-align: justify;
   padding-left: 100px;
-  padding-right: 200px;
+  padding-right: 300px;
 }
-
-

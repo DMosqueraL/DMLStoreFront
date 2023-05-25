@@ -16,10 +16,10 @@ export function Footer() {
           <div>
             <ul>
               <Link href="/terminosycondiciones">Términos y Condiciones</Link>
-              <Link href="#">Políticas de privacidad</Link>
-              <Link href="#">Nosotros</Link>
-              <Link href="#">Contáctenos</Link>
-              <Link href="#">FAQs</Link>
+              <Link href="/politicasprivacidad">Políticas de privacidad</Link>
+              <Link href="/nosotros">Nosotros</Link>
+              <Link href="/contacto">Contáctenos</Link>
+              <Link href="#"></Link>
             </ul>
           </div>
 

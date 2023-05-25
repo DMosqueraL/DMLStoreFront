@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { Container, Checkbox } from "semantic-ui-react";
+import { Container } from "semantic-ui-react";
 import { BasicLayout } from "@/layouts";
-import { Label, Separator } from "@/components/Shared";
+import { Separator } from "@/components/Shared";
 import styles from "./terminosycondiciones.module.scss";
 
 export default function TerminosCondicionesPage() {
@@ -164,19 +164,15 @@ export default function TerminosCondicionesPage() {
               voluntaria y podría ser seleccionada al momento de crear su
               cuenta. C.I DML S.A.S reserva los derechos de cambiar o de
               modificar estos términos sin previo aviso.
+              <Separator height={5} />
               <span>
-                Estos términos y condiciones se han generado en:
-                <br />
+                Estos términos y condiciones se han generado en: {" "}
                 <Link href="terminosycondicionesdeusoejemplo.com.">
                   terminosycondicionesdeusoejemplo
                 </Link>
               </span>
             </p>
-          </Container>
-          <Separator height={20} />
-          <Checkbox /> <span>
-          <h7>Acepto los Términos y Condiciones de este sitio.</h7>
-          </span>
+          </Container>         
 
           <Separator height={50} />
         </Container>
