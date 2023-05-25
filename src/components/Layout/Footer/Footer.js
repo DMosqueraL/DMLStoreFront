@@ -15,7 +15,7 @@ export function Footer() {
 
           <div>
             <ul>
-              <Link href="#">Términos y Condiciones</Link>
+              <Link href="/terminosycondiciones">Términos y Condiciones</Link>
               <Link href="#">Políticas de privacidad</Link>
               <Link href="#">Nosotros</Link>
               <Link href="#">Contáctenos</Link>

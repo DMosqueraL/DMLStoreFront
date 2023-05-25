@@ -1,0 +1,22 @@
+@import "~src/scss/index.scss";
+.container {
+  align-items: center;
+  justify-content: center;
+  
+  .titulo {
+    text-align: center;
+  }
+
+  h8 {
+    color: $text-primary;
+  }
+}
+
+.parrafo {
+  justify-content: center;
+  text-align: justify;
+  padding-left: 100px;
+  padding-right: 200px;
+}
+
+

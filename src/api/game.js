@@ -59,4 +59,22 @@ export class Game {
       throw error;
     }
   }
+
+  async gameBySlug(slug) {
+    try {
+      const filter = `filters[slug][$eq]=${slug}`;
+      const populate = "";
+
+      const url = `${ENV.API_URL}/${ENV.ENDPOINTS.GAME}?${filter}`;
+
+      const response = await fetch(url);
+      const result = response.json();
+
+      if (!response.status === 200) throw result;
+
+      return result.data[0];
+    } catch (error) {
+      throw error;
+    }
+  }
 }

@@ -23,7 +23,7 @@ export default function PlatformPage(props) {
   const [dataGames, setDataGames] = useState(null);
   const [dataPlatform, setDataPlatform] = useState(null);
 
-  useEffect((formValue) => {
+  useEffect(() => {
     (async () => {
       try {
         const responseGames = await gameCtrl.getGamesByPlatformSlug(
@@ -52,7 +52,7 @@ export default function PlatformPage(props) {
 
   return (
     <>
-      <BasicLayout>
+      <BasicLayout relative>
         <Container>
           <Separator height={50} />
           <h2>{title}</h2>

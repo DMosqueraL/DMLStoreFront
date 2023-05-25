@@ -12,7 +12,6 @@ export async function getServerSideProps(context) {
   return {
     props: {
       platform: platform,
-      games: null,
       pagination: page,
     },
   };
