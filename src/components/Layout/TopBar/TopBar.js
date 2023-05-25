@@ -11,7 +11,7 @@ export function TopBar(props) {
     <div className={styles.topBar}>
       <div className={styles.left}>
         <Link href="/">
-            <Image src="images/logo.jpeg" alt="DML Store" />
+            <Image src="/images/logo.jpeg" alt="DML Store" />
         </Link>
       </div>
 

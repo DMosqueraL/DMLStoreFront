@@ -9,7 +9,7 @@ export function Footer() {
         <div className={styles.columns}>
           <div>
             <Link href="/">
-              <Image src="images/logo.jpeg" alt="DML Store" />
+              <Image src="/images/logo.jpeg" alt="DML Store" />
             </Link>
           </div>
 

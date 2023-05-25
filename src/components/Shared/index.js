@@ -4,4 +4,6 @@ export * from "./Confirm";
 export * from "./Label";
 export * from "./GridGames";
 export * from "./BarTrust";
-export * from "./BannerAd"
+export * from "./BannerAd";
+export * from "./NoResults";
+export * from "./Paginations";

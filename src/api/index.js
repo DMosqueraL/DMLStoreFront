@@ -1,6 +1,6 @@
 export * from "./auth";
 export * from "./token";
 export * from "./user";
-export * from "./platforms";
+export * from "./platform";
 export * from "./address";
 export * from "./game";
