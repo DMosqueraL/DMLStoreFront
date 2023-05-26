@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Game } from "@/api";
 
 export { default } from "./game";
 

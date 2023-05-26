@@ -7,3 +7,5 @@ export * from "./BarTrust";
 export * from "./BannerAd";
 export * from "./NoResults";
 export * from "./Paginations";
+export * from "./WishlistIcon";
+export * from "./FullModal";

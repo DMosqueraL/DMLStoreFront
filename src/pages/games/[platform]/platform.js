@@ -34,11 +34,12 @@ export default function PlatformPage(props) {
 
         setDataGames(responseGames);
         setDataPlatform(responsePlatform);
+        
       } catch (error) {
         throw error;
       }
     })();
-  }, []);
+  }, [dataGames]);
 
   if (!dataGames) return null;
 
