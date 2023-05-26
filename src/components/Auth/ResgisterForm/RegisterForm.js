@@ -17,7 +17,6 @@ export function RegisterForm() {
       try {
         await authControl.register(formValue);
         router.push("/join/sign-in");
-        console.log("¡TODO OK!");
       } catch (error) {
         console.error(error);
       }

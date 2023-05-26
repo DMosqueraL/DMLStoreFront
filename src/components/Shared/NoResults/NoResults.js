@@ -1,6 +1,6 @@
 import styles from "./NoResults.module.scss";
 
-export default function NoResults(props) {
+export function NoResults(props) {
   const { text } = props;
 
   return (

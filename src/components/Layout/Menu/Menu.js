@@ -21,7 +21,6 @@ export function Menu(props) {
     (async () => {
       try {
         const response = await platformControl.getAll();
-        //console.log(response)
         setPlatforms(response.data);
       } catch (error) {
         console.error(error);
