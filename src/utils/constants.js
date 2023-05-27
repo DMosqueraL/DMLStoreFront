@@ -12,6 +12,9 @@ export const ENV = {
         ADDRESS: "addresses",
         GAME: "games",
         WISHLIST: "wishlists",
+				PAYMENT_ORDER: "payment-order",
     },
-    TOKEN: "token"
+    TOKEN: "token",
+    CART: "cart",
+    STRIPE_TOKEN: "pk_test_51N9us3C5JPlgWmx4xWSN4zVvR679UuK7JH4IkDiShdycwfk4DIzAn5Dp8DTKLlyTX6f5V5d3FQtPFNFcCAmaoqv200pge7xXDW"
 }
