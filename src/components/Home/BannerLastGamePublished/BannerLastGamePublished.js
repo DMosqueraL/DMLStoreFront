@@ -49,7 +49,7 @@ export function BannerLastGamePublished() {
             <Label.Discount>
               -{game.attributes.discount}%
             </Label.Discount>
-            <span className={styles.finalPrice}>US${price}</span>
+            <span className={styles.finalPrice}>US${price.toFixed(2)}</span>
           </p>
         </Container>
       </Link>
