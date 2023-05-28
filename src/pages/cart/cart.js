@@ -4,7 +4,7 @@ import { Game } from "@/api";
 import { useCart } from "@/hooks";
 import { CartLayout } from "@/layouts";
 import { Cart } from "@/components/Cart";
-import { Separator } from "@/components/Shared";
+import { Separator, Seo } from "@/components/Shared";
 
 const gameCtrl = new Game();
 
@@ -34,6 +34,7 @@ export default function CartPage() {
 
   return (
     <>
+      <Seo title="Mi Carrito" />
       <Separator hright={70} />
       <CartLayout>
         {currentStep === 1 && <Cart.StepOne games={games} />}

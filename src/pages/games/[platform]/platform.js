@@ -10,6 +10,7 @@ import {
   GridGames,
   NoResults,
   Paginations,
+  Seo
 } from "@/components/Shared";
 
 const gameCtrl = new Game();
@@ -53,6 +54,7 @@ export default function PlatformPage(props) {
 
   return (
     <>
+    <Seo title={`Juegos de ${title}`} />
       <BasicLayout relative>
         <Container>
           <Separator height={50} />

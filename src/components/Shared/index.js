@@ -9,3 +9,4 @@ export * from "./NoResults";
 export * from "./Paginations";
 export * from "./WishlistIcon";
 export * from "./FullModal";
+export * from "./Seo";

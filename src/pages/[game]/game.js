@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { BasicLayout } from "@/layouts";
 import { Game } from "@/api";
 import { Game as GM } from "@/components/Game";
-import { Separator } from "@/components/Shared";
+import { Separator, Seo } from "@/components/Shared";
 
 const gameCtrl = new Game();
 
@@ -28,6 +28,7 @@ export default function GamePage(props) {
 
   return (
     <>
+      <Seo title={game.data[0].attributes.title} />
       <BasicLayout relative>
         <GM.HeaderWallpaper image={urlWallpaper} />
         <GM.Panel gameId={game.data[0].id} game={game.data[0].attributes} />

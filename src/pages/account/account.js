@@ -3,21 +3,27 @@ import { Tab } from "semantic-ui-react";
 import { useRouter } from "next/router";
 import { BasicLayout } from "@/layouts";
 import { useAuth } from "@/hooks";
-import { Info, Settings, Address, WishList, Orders } from "@/components/Account";
-import { Separator } from "@/components/Shared";
+import {
+  Info,
+  Settings,
+  Address,
+  WishList,
+  Orders,
+} from "@/components/Account";
+import { Separator, Seo } from "@/components/Shared";
 import styles from "./account.module.scss";
 
 export default function AccountPage() {
   const { logout, user } = useAuth();
   const router = useRouter();
-  const [reload, setReload] = useState(false)
+  const [reload, setReload] = useState(false);
 
   if (!user) {
     router.push("/");
     return null;
-  } 
+  }
 
-  const onReload = () => setReload((prevState) => !prevState)
+  const onReload = () => setReload((prevState) => !prevState);
 
   const panes = [
     {
@@ -49,14 +55,14 @@ export default function AccountPage() {
       ),
     },
     {
-      menuItem: {key: 20, icon: "settings", content: "Ajustes"},
+      menuItem: { key: 20, icon: "settings", content: "Ajustes" },
       render: () => (
         <Tab.Pane attached={false}>
           <Settings.ChangeNameForm />
           <div className={styles.containerForms}>
-          <Settings.ChangeEmailForm />
-          <Settings.ChangePasswordForm />
-          <Separator height={80} />
+            <Settings.ChangeEmailForm />
+            <Settings.ChangePasswordForm />
+            <Separator height={80} />
           </div>
           <Separator height={80} />
         </Tab.Pane>
@@ -73,6 +79,7 @@ export default function AccountPage() {
   ];
   return (
     <>
+      <Seo title="Mi Cuenta" />
       <BasicLayout isContainer relative>
         <Info />
 
