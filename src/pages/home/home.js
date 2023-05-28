@@ -43,7 +43,7 @@ export default function HomePage() {
           subtitle="¡Compara juegos y encuentra el tuyo!"
           btnTitle="Entrar ahora"
           btnLink="/account"
-          image="/images/videojuegos2.jpg"
+          image="/images/juegos.jpeg"
         />
 
         <Separator height={50} />

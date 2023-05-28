@@ -3,7 +3,7 @@ import { Tab } from "semantic-ui-react";
 import { useRouter } from "next/router";
 import { BasicLayout } from "@/layouts";
 import { useAuth } from "@/hooks";
-import { Info, Settings, Address, WishList } from "@/components/Account";
+import { Info, Settings, Address, WishList, Orders } from "@/components/Account";
 import { Separator } from "@/components/Shared";
 import styles from "./account.module.scss";
 
@@ -24,7 +24,8 @@ export default function AccountPage() {
       menuItem: "Mis Pedidos",
       render: () => (
         <Tab.Pane attached={false}>
-          <p>Mis Pedidos...</p>
+          <Orders />
+          <Separator height={80} />
         </Tab.Pane>
       ),
     },
