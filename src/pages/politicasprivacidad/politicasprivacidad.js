@@ -9,6 +9,7 @@ export default function PoliticasPrivacidadPage() {
     <>
       <BasicLayout relative>
         <Container className={styles.container}>
+          <Separator height={50} />
           <Container>
             <strong className={styles.titulos}>Política de privacidad</strong>
             <Separator height={20} />
@@ -180,7 +181,7 @@ export default function PoliticasPrivacidadPage() {
             </p>
           </Container>
           <Separator height={15} />
-          <span>Políticas de Privacidad generadas en: {" "}</span>          
+          <span>Políticas de Privacidad generadas en: </span>
           <Link href="https://zyro.com/co/herramientas/generador-de-politicas-de-privacidad">
             zyro.com
           </Link>

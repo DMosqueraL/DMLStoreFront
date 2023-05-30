@@ -8,7 +8,8 @@ export default function TerminosCondicionesPage() {
   return (
     <>
       <BasicLayout relative>
-        <Container className={styles.container}>
+        <div className={styles.container}>
+        <Container>
           <div>
             <h2 className={styles.titulo}>Términos y Condiciones de Uso</h2>
           </div>
@@ -176,6 +177,7 @@ export default function TerminosCondicionesPage() {
 
           <Separator height={50} />
         </Container>
+        </div>
       </BasicLayout>
     </>
   );

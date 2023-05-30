@@ -1,0 +1,29 @@
+@import "~/src/scss/index.scss";
+
+.nosotros {
+  display: block;
+  padding: 150px;
+  background-image: url("/images/nosotros2.jpg");
+  background-size: cover;
+  
+
+  > h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: $primary;
+  }
+  > h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 18px;
+
+    > strong {
+      color: $primary;
+      font-size: 20px;
+    }
+  }
+}
