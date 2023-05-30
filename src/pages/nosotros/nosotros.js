@@ -11,7 +11,7 @@ export default function NosotrosPage() {
           <h2>Sobre DML Store</h2>
           <Separator height={30} />
           <h1>
-            Nuestra misión: Orientar a todos en la alegría de jugar uno o muchos
+            Nuestra misión: Orientar a todos en la emoción de jugar uno o muchos
             videojuegos.
           </h1>
           <Separator height={30} />
