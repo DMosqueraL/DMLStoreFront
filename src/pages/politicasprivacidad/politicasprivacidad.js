@@ -7,6 +7,7 @@ import styles from "./politicasprivacidad.module.scss";
 export default function PoliticasPrivacidadPage() {
   return (
     <>
+      <Seo title="Políticas de Privacidad" />
       <BasicLayout relative>
         <Container className={styles.container}>
           <Separator height={50} />
