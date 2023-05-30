@@ -19,7 +19,7 @@ export function Account() {
 
   return (
     <div className={styles.account}>
-      <Button icon className={styles.cart}>
+      <Button icon className={styles.cart} >
         <Icon name="cart" onClick={goToCart} />
         {total > 0 && <Label circular>{total}</Label>}
       </Button>

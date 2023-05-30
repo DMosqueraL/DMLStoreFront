@@ -40,9 +40,9 @@ export default function HomePage() {
         <Separator height={100} />
 
         <BannerAd
-          title="Regístrate y obtén los mejores precios."
-          subtitle="¡Compara juegos y encuentra el tuyo!"
-          btnTitle="Entrar ahora"
+          title="¡Ven y regístrate!"
+          subtitle="Compara juegos y encuentra el tuyo."
+          btnTitle="¡Entrar Ahora!"
           btnLink="/account"
           image="/images/juegos.jpeg"
         />
