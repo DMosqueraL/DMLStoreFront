@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container } from "semantic-ui-react";
 import { BasicLayout } from "@/layouts";
-import { Separator } from "@/components/Shared";
+import { Separator, Seo } from "@/components/Shared";
 import styles from "./politicasprivacidad.module.scss";
 
 export default function PoliticasPrivacidadPage() {
