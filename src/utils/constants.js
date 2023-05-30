@@ -1,5 +1,5 @@
 export const ENV = {
-  SERVER_HOST: "https://dmlstoreback.up.railway.app/",
+  SERVER_HOST: "https://dmlstoreback.up.railway.app/", //
   API_URL: "https://dmlstoreback.up.railway.app/api",
   ENDPOINTS: {
     AUTH: {

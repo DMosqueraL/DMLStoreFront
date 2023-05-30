@@ -13,7 +13,7 @@ export default function SignUpPage() {
           <h3>Crear Cuenta</h3>
           <RegisterForm />
           <div className={styles.actions}>
-            <Link href="/join/sign-in">Atrás</Link>
+            <Link href="/join/sign-in">Iniciar Sesión</Link>
           </div>
         </div>
       </JoinLayout>
